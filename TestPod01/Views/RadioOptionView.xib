@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="RadioOptionView" customModule="TestPod01" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lTU-dV-Zuw">
+                    <rect key="frame" x="4" y="4" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="lTU-dV-Zuw" secondAttribute="height" multiplier="1:1" id="0Sv-00-YOi"/>
+                        <constraint firstAttribute="width" constant="24" id="Rd5-16-ovn"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="1000" verticalCompressionResistancePriority="990" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ma4-Xr-UWj">
+                    <rect key="frame" x="38" y="4" width="41.5" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="W1g-bE-LQZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4eH-mv-qo1">
+                    <rect key="frame" x="4" y="4" width="75.5" height="24"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain"/>
+                    <connections>
+                        <action selector="didTapAction" destination="iN0-l3-epB" eventType="touchUpInside" id="5v5-mk-422"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ma4-Xr-UWj" firstAttribute="leading" secondItem="lTU-dV-Zuw" secondAttribute="trailing" constant="10" id="1qq-eG-s5D"/>
+                <constraint firstAttribute="bottom" secondItem="ma4-Xr-UWj" secondAttribute="bottom" priority="999" constant="4" id="7oU-v1-ZAI"/>
+                <constraint firstItem="lTU-dV-Zuw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="E7F-rm-Eq2"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ma4-Xr-UWj" secondAttribute="trailing" constant="4" id="H8I-eh-3Mz"/>
+                <constraint firstItem="4eH-mv-qo1" firstAttribute="trailing" secondItem="ma4-Xr-UWj" secondAttribute="trailing" id="e3d-PJ-ymm"/>
+                <constraint firstItem="4eH-mv-qo1" firstAttribute="leading" secondItem="lTU-dV-Zuw" secondAttribute="leading" id="ei5-Rs-kv2"/>
+                <constraint firstItem="ma4-Xr-UWj" firstAttribute="top" secondItem="lTU-dV-Zuw" secondAttribute="top" id="elW-pX-UHr"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="lTU-dV-Zuw" secondAttribute="bottom" constant="4" id="kVg-4f-U0h"/>
+                <constraint firstItem="lTU-dV-Zuw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="4" id="vET-pe-fmm"/>
+                <constraint firstItem="4eH-mv-qo1" firstAttribute="bottom" secondItem="ma4-Xr-UWj" secondAttribute="bottom" id="xmn-vO-Twx"/>
+                <constraint firstItem="4eH-mv-qo1" firstAttribute="top" secondItem="lTU-dV-Zuw" secondAttribute="top" id="zn4-Yb-TmG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="button" destination="4eH-mv-qo1" id="cnk-Rs-J1V"/>
+                <outlet property="radioImageView" destination="lTU-dV-Zuw" id="stk-re-7U1"/>
+                <outlet property="titleLabel" destination="ma4-Xr-UWj" id="VRR-31-m2a"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="-194.19642857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

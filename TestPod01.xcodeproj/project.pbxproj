@@ -14,6 +14,9 @@
 		9D30C5972873D85800493A2C /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D30C5962873D85800493A2C /* ExtensionTests.swift */; };
 		9D30C59B2873DAA400493A2C /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D30C5992873DA8D00493A2C /* UIView+Utils.swift */; };
 		9D30C59F2873DB6E00493A2C /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D30C59E2873DB6E00493A2C /* HUD.swift */; };
+		9D30C5DD2873FC6C00493A2C /* RadioOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D30C5DC2873FC6C00493A2C /* RadioOptionView.swift */; };
+		9D30C5DF2873FC7400493A2C /* RadioOptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D30C5DE2873FC7400493A2C /* RadioOptionView.xib */; };
+		9D30C5E12873FF5500493A2C /* Common+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D30C5E02873FF5500493A2C /* Common+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,9 @@
 		9D30C5962873D85800493A2C /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
 		9D30C5992873DA8D00493A2C /* UIView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
 		9D30C59E2873DB6E00493A2C /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		9D30C5DC2873FC6C00493A2C /* RadioOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioOptionView.swift; sourceTree = "<group>"; };
+		9D30C5DE2873FC7400493A2C /* RadioOptionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RadioOptionView.xib; sourceTree = "<group>"; };
+		9D30C5E02873FF5500493A2C /* Common+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Common+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				9D30C5992873DA8D00493A2C /* UIView+Utils.swift */,
+				9D30C5E02873FF5500493A2C /* Common+Utils.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -106,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				9D30C59E2873DB6E00493A2C /* HUD.swift */,
+				9D30C5DC2873FC6C00493A2C /* RadioOptionView.swift */,
+				9D30C5DE2873FC7400493A2C /* RadioOptionView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D30C5DF2873FC7400493A2C /* RadioOptionView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +232,8 @@
 				9D30C59F2873DB6E00493A2C /* HUD.swift in Sources */,
 				9D30C59B2873DAA400493A2C /* UIView+Utils.swift in Sources */,
 				9D30C5812872A3EC00493A2C /* TestPod01.docc in Sources */,
+				9D30C5E12873FF5500493A2C /* Common+Utils.swift in Sources */,
+				9D30C5DD2873FC6C00493A2C /* RadioOptionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
