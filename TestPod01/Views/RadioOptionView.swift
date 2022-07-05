@@ -47,6 +47,9 @@ public class RadioOptionView: UIView {
     }
     
     private func setupUI() {
+        button.titleLabel?.text = nil
+        button.setTitle("", for: .normal)
+        
         radioImageView.tintColor = .systemBlue
         
         titleLabel.font = UIFont.systemFont(ofSize: 16, weight: .medium)

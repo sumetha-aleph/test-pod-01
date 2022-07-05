@@ -53,7 +53,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "" => "" }
+  spec.author             = { "Sumetha Waritt" => "sumetha.waritt@aleph-labs.com" }
   # Or just: spec.author    = ""
   # spec.authors            = { "" => "" }
   # spec.social_media_url   = "https://twitter.com/"
@@ -120,6 +120,7 @@ Pod::Spec.new do |spec|
   #
 
    spec.framework  = "UIKit"
+   spec.framework  = "SwiftUI"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 
   # spec.library   = "iconv"

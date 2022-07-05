@@ -17,6 +17,7 @@
 		9D30C5DD2873FC6C00493A2C /* RadioOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D30C5DC2873FC6C00493A2C /* RadioOptionView.swift */; };
 		9D30C5DF2873FC7400493A2C /* RadioOptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D30C5DE2873FC7400493A2C /* RadioOptionView.xib */; };
 		9D30C5E12873FF5500493A2C /* Common+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D30C5E02873FF5500493A2C /* Common+Utils.swift */; };
+		9D30C5E428740A8200493A2C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D30C5E328740A8200493A2C /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		9D30C5DC2873FC6C00493A2C /* RadioOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioOptionView.swift; sourceTree = "<group>"; };
 		9D30C5DE2873FC7400493A2C /* RadioOptionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RadioOptionView.xib; sourceTree = "<group>"; };
 		9D30C5E02873FF5500493A2C /* Common+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Common+Utils.swift"; sourceTree = "<group>"; };
+		9D30C5E328740A8200493A2C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				9D30C57F2872A3EC00493A2C /* TestPod01.h */,
+				9D30C5E228740A4400493A2C /* SwiftUIs */,
 				9D30C59D2873DB2A00493A2C /* Views */,
 				9D30C5982873DA8D00493A2C /* Extensions */,
 				9D30C5802872A3EC00493A2C /* TestPod01.docc */,
@@ -117,6 +120,14 @@
 				9D30C5DE2873FC7400493A2C /* RadioOptionView.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9D30C5E228740A4400493A2C /* SwiftUIs */ = {
+			isa = PBXGroup;
+			children = (
+				9D30C5E328740A8200493A2C /* LoadingView.swift */,
+			);
+			path = SwiftUIs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +245,7 @@
 				9D30C5812872A3EC00493A2C /* TestPod01.docc in Sources */,
 				9D30C5E12873FF5500493A2C /* Common+Utils.swift in Sources */,
 				9D30C5DD2873FC6C00493A2C /* RadioOptionView.swift in Sources */,
+				9D30C5E428740A8200493A2C /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
