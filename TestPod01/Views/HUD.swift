@@ -55,7 +55,7 @@ public class HUD: UIView {
         NSLayoutConstraint.activate([
             label.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
             label.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
-            label.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 10),
+            label.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10),
             label.heightAnchor.constraint(equalToConstant: 30),
         ])
         
@@ -77,9 +77,11 @@ public class HUD: UIView {
             self.centerXAnchor.constraint(equalTo: parentView.centerXAnchor),
             self.centerYAnchor.constraint(equalTo: parentView.centerYAnchor),
         ])
+        indicator.startAnimating()
     }
     
     public func hide() {
+        indicator.stopAnimating()
         self.removeFromSuperview()
     }
 
