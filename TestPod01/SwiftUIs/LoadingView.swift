@@ -11,10 +11,23 @@ public struct LoadingView: View {
     public var body: some View {
         VStack(alignment: .center, spacing: 10) {
             Spacer()
-            ProgressView()
-                .progressViewStyle(CircularProgressViewStyle(tint: .white))
-                .scaleEffect(1.5)
-                .padding(.top, 20)
+            if #available(iOS 14.0, *) {
+                ProgressView()
+                    .progressViewStyle(CircularProgressViewStyle(tint: .white))
+                    .scaleEffect(1.5)
+                    .padding(.top, 20)
+            } else {
+                // Fallback on earlier versions
+                Image("circle.dotted")
+                    .resizable()
+                    .frame(width: 36, height: 36, alignment: .center)
+                    .foregroundColor(.white)
+                    .rotationEffect(Angle(degrees: 360))
+                    .animation(
+                        .linear(duration: 2.0)
+                        .repeatForever(autoreverses: false)
+                    )
+            }
             Spacer()
             Text("Loading...")
                 .font(
