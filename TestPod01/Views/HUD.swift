@@ -13,7 +13,9 @@ public class HUD: UIView {
         let view = UIActivityIndicatorView(style: .large)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.tintColor = .white
+        view.color = .white
         view.hidesWhenStopped = true
+        view.transform = .init(scaleX: 1.5, y: 1.5)
         return view
     }()
     
@@ -24,6 +26,7 @@ public class HUD: UIView {
         view.textAlignment = .center
         view.numberOfLines = 1
         view.text = "Loading..."
+        view.font = UIFont.systemFont(ofSize: 18, weight: .medium)
         return view
     }()
 
@@ -47,8 +50,8 @@ public class HUD: UIView {
     
     private func setupUI() {
         NSLayoutConstraint.activate([
-            widthAnchor.constraint(equalToConstant: 200),
-            heightAnchor.constraint(equalToConstant: 200),
+            widthAnchor.constraint(equalToConstant: 180),
+            heightAnchor.constraint(equalToConstant: 180),
         ])
         
         addSubview(label)
@@ -62,7 +65,7 @@ public class HUD: UIView {
         addSubview(indicator)
         NSLayoutConstraint.activate([
             indicator.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            indicator.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: -50),
+            indicator.centerYAnchor.constraint(equalTo: self.centerYAnchor),
         ])
         
         self.backgroundColor = .black.withAlphaComponent(0.67)
