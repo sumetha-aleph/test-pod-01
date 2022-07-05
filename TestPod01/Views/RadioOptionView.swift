@@ -37,8 +37,8 @@ public class RadioOptionView: UIView {
     public var value : Any?
     
     public static func instanceFromNib(bundle : Bundle? = nil) -> RadioOptionView {
-        UINib(nibName: self.identifier, bundle: bundle)
-            .instantiate(withOwner: nil)[0] as! RadioOptionView
+        UINib(nibName: self.identifier, bundle: bundle ?? Bundle(for: self.classForCoder()))
+            .instantiate(withOwner: self)[0] as! RadioOptionView
     }
 
     public override func awakeFromNib() {
