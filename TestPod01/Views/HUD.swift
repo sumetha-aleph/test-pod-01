@@ -35,7 +35,7 @@ public class HUD: UIView {
     }
     */
     
-    init() {
+    public init() {
         super.init(frame: .zero)
         setupUI()
     }
@@ -70,7 +70,7 @@ public class HUD: UIView {
         self.clipsToBounds = true
     }
     
-    func show(on parentView : UIView) {
+    public func show(on parentView : UIView) {
         self.translatesAutoresizingMaskIntoConstraints = false
         parentView.addSubview(self)
         NSLayoutConstraint.activate([
@@ -79,7 +79,7 @@ public class HUD: UIView {
         ])
     }
     
-    func hide() {
+    public func hide() {
         self.removeFromSuperview()
     }
 
